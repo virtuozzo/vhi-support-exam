@@ -9,7 +9,7 @@ $ cd vhi-support-exam
 ### Edit credentials files.
 Generate an SSH keypair named `exam_rsa` in this directory:
 ```
-➜  vhi-support-exam # ssh-keygen 
+$ ssh-keygen 
 Generating public/private rsa key pair.
 Enter file in which to save the key: ./exam_rsa
 Enter passphrase (empty for no passphrase): 
@@ -26,6 +26,7 @@ If necessary, edit `00_vars_vhi_cluster.tf` and `00_vars_bastion.tf` to use flav
 
 ### Deploy the sandbox.
 ```
+$ source openstack-creds.sh
 $ terraform init && terraform apply
 ```
 After the deployment has finished check your VHI Self Service Panel to find Floating IP address assigned to Bastion VM. 
