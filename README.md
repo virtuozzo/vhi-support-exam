@@ -34,8 +34,8 @@ After the deployment has finished check your VHI Self Service Panel to find Floa
 Using provided IP address access Bastion VM via RDP on port 3390.
 Optionally access Bastion VM via SSH on port 2228 using the provided SSH key, and use an SSH tunnel to access Admin Panel.
 ```
-ssh -L 8888:10.0.102.10:8888 -N -f <bastion_ip_address> -i .ssh/id_rsa.pub -p2228
-ssh <bastion_ip_address> -i .ssh/id_rsa.pub -p2228
+ssh -L 8888:10.0.102.10:8888 -N -f <bastion_ip_address> -i .ssh/exam_rsa.pub -p2228
+ssh <bastion_ip_address> -i .ssh/exam_rsa.pub -p2228
 ```
 
 ### Access sandbox nodes and Admin Panel
