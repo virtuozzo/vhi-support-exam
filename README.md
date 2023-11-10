@@ -19,7 +19,7 @@ Your public key has been saved in ./exam_rsa.pub
 ```
 Provide generated keypair `exam_rsa` and `exam_rsa.pub` to the student along with the last two paragraphs of this README.
 
-Edit `00_vars_access.tf` to add openstack credentials for the VHI project.
+Edit `openstack-creds.sh` to add openstack credentials for the VHI project.
 
 ### Edit resource files.
 If necessary, edit `00_vars_vhi_cluster.tf` and `00_vars_bastion.tf` to use flavor and OS image names you have in your cluster.
